@@ -1,12 +1,12 @@
--- This resource is part of the default Cfx.re asset pack (cfx-server-data)
--- Altering or recreating for local use only is strongly discouraged.
+-- Cette ressource a été modifiée et appartient désormais à HavocPvP
+-- Basé sur le gamemode basique original de Cfx.re
 
 version '1.0.0'
-author 'Cfx.re <root@cfx.re>'
-description 'A basic freeroam gametype that uses the default spawn logic from spawnmanager.'
+author 'HavocPvP (basé sur Cfx.re)'
+description 'Un type de jeu freeroam basique qui utilise la logique de spawn par défaut du spawnmanager - modifié pour HavocPvP.'
 repository 'https://github.com/citizenfx/cfx-server-data'
 
-resource_type 'gametype' { name = 'Freeroam' }
+resource_type 'gametype' { name = 'Freeroam HavocPvP' }
 
 client_script 'basic_client.lua'
 
