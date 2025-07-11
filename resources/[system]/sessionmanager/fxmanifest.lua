@@ -1,9 +1,9 @@
--- This resource is part of the default Cfx.re asset pack (cfx-server-data)
--- Altering or recreating for local use only is strongly discouraged.
+-- Cette ressource a été modifiée et appartient désormais à HavocPvP
+-- Basé sur le session manager original de Cfx.re
 
 version '1.0.0'
-author 'Cfx.re <root@cfx.re>'
-description 'Handles the "host lock" for non-OneSync servers. Do not disable.'
+author 'HavocPvP (basé sur Cfx.re)'
+description 'Gère le "verrouillage d\'hôte" pour les serveurs non-OneSync. Ne pas désactiver - modifié pour HavocPvP.'
 repository 'https://github.com/citizenfx/cfx-server-data'
 
 fx_version 'cerulean'
