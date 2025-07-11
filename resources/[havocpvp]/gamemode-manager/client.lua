@@ -6,7 +6,7 @@ local currentGamemode = nil
 
 -- Désactiver le spawn automatique au démarrage
 CreateThread(function()
-    exports.spawnmanager:setAutoSpawn(false)
+    exports['spawn-manager']:setAutoSpawn(false)
 end)
 
 -- Gestion des événements de changement de statut
@@ -32,8 +32,8 @@ AddEventHandler('havocpvp:startGamemode', function(gamemode)
     TriggerEvent('havocpvp:closeLobbyMenu')
     
     -- Activer le spawn manager pour ce gamemode
-    exports.spawnmanager:setAutoSpawn(true)
-    exports.spawnmanager:forceRespawn()
+    exports['spawn-manager']:setAutoSpawn(true)
+    exports['spawn-manager']:forceRespawn()
     
     print("Gamemode démarré: " .. gamemode)
 end)
@@ -44,10 +44,10 @@ AddEventHandler('havocpvp:returnToLobby', function()
     currentGamemode = nil
     
     -- Désactiver le spawn automatique
-    exports.spawnmanager:setAutoSpawn(false)
+    exports['spawn-manager']:setAutoSpawn(false)
     
     -- Spawner le joueur dans le lobby
-    exports.spawnmanager:spawnPlayer({
+    exports['spawn-manager']:spawnPlayer({
         x = Config.LobbyPosition.x,
         y = Config.LobbyPosition.y,
         z = Config.LobbyPosition.z,
